@@ -250,7 +250,7 @@ section .container-berita .pembungkus {
 }
 .pembungkus .kiri .berita-kiri {
   background-color: white;
-  box-shadow: 0.5px 0.5px 5px #000;
+  box-shadow: 0.5px 0.5px 5px #515151;
   padding-bottom: 30px;
 }
 .pembungkus .kiri .berita-kiri p,
@@ -260,7 +260,7 @@ section .container-berita .pembungkus {
 }
 .pembungkus .kanan .berita-kanan {
   background-color: white;
-  box-shadow: 0.5px 0.5px 5px #000;
+  box-shadow: 0.5px 0.5px 5px #515151;
   margin-bottom: 20px;
   height: 230px;
   display: flex;
@@ -336,6 +336,67 @@ section .container-galeri {
   width: 95%;
 }
 /* akhir galeri */
+/* lokaisi */
+section .container-lokasi {
+  width: 100%;
+  background-image: url(./asset/img/bg-j.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  z-index: 3;
+}
+.container-lokasi h2 {
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 5px #000;
+  position: relative;
+  z-index: 5;
+  padding-top: 50px;
+  font-size: 1.5em;
+}
+section .container-lokasi::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 40%;
+  position: absolute;
+  z-index: 4;
+}
+.container-lokasi .pembungkus {
+  position: relative;
+  z-index: 5;
+  height: 400px;
+  padding-top: 100px;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+}
+.container-lokasi .location {
+  list-style: none;
+}
+.container-lokasi .location li {
+  text-shadow: 1px 1px 5px #000;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+}
+
+.container-lokasi .location li img {
+  width: 30px;
+  box-shadow: 0.5px 0.5px 5px white;
+  margin-right: 10px;
+}
+.img-lokasi img {
+  width: 80%;
+  display: block;
+  margin-top: 100px;
+  margin: auto;
+}
+/* akhir lokasi */
 /* footer */
 .footer {
   padding-top: 50px;
@@ -638,6 +699,10 @@ section .container-profil {
   .empat {
     display: none;
   }
+  .pembungkus .kiri img {
+    width: 100%;
+    height: 230px;
+  }
 
   .container-guru .guru {
     display: block;
@@ -678,6 +743,18 @@ section .container-profil {
     width: 100%;
     height: 3000px;
   }
+  .container-lokasi {
+    height: 700px !important;
+  }
+  .container-lokasi .pembungkus {
+    display: block;
+  }
+  .container-lokasi .pembungkus .img-lokasi {
+    margin-top: 50px;
+  }
+  .container-lokasi .pembungkus .img-lokasi img {
+    width: 90%;
+  }
 }
 @media (max-width: 992px) {
   .navbar-atas .container-nav {
@@ -712,5 +789,12 @@ section .container-profil {
   .guru-header {
     width: 100%;
     height: 1400px;
+  }
+  .container-lokasi .location li {
+    font-size: 14px;
+  }
+
+  .container-lokasi .location li img {
+    width: 25px;
   }
 }
