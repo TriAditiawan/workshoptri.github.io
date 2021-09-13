@@ -70,6 +70,8 @@ body {
   font-size: 18px;
 }
 .container-nav .list-nav li a {
+  transition: all 0.5s;
+
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -343,7 +345,7 @@ section .container-lokasi {
   background-position: center;
   background-size: cover;
   height: 500px;
-  padding-bottom: 50px;
+  padding-bottom: 50px !important;
   position: relative;
   z-index: 3;
 }
