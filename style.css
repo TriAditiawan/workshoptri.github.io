@@ -225,9 +225,81 @@ section .container-info {
 }
 
 /* akhirinfo */
+/* guru kami */
+.container-gurukami {
+  height: 400px;
+  padding-top: 100px;
+  padding-bottom: 350px !important;
+  width: 90%;
+  margin: auto;
+}
+.container-gurukami .button {
+  text-align: center;
+}
+.container-gurukami a {
+  padding: 15px 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  background-color: #00a2ea;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+.container-gurukami h2 {
+  font-size: 2em;
+  padding: 50px 0;
+  color: #00a2ea;
+}
+.container-gurukami .pembungkus {
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.container-gurukami .container-guru2 {
+  box-shadow: 0.8px 0.8px 8px #00a2ea;
+  margin: 25px auto !important;
+  border-radius: 23px 23px 5px 5px;
+}
+.container-gurukami .container-guru2,
+.container-gurukami h2,
+.container-gurukami .container-guru2 h3 {
+  width: 90%;
+  margin: auto;
+}
+.container-gurukami .container-guru2 h3 {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 15px 0;
+}
+.container-gurukami .container-guru2 p {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: 16px;
+}
+.container-gurukami .container-guru2 .img-guru {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.container-gurukami .container-guru2 .icon {
+  padding: 25px 0;
+  margin: auto;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.container-gurukami .container-guru2 .icon img {
+  width: 25px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+/* akhir guru kami */
 /* berita */
 section .container-berita {
-  padding-top: 100px;
+  padding-top: 200px;
   width: 90%;
   margin: auto;
 }
@@ -503,13 +575,13 @@ section .container-guru {
   height: 150px;
 }
 .container-guru h5 {
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   margin: 15px 0;
   color: #212112;
 }
 .container-guru h2 {
-  font-size: 22px;
+  font-size: 18px;
   text-align: center;
 }
 hr {
@@ -536,25 +608,29 @@ section .container-profil {
   margin: 25px;
 }
 .container-profil .flex h2 {
+  margin-left: 35px;
   color: white;
   margin-top: 150px;
-  margin-left: 35px;
   font-size: 40px;
   text-shadow: 1px 1px 5px #000;
 }
 .container-profil ul {
+  width: 90%;
+  margin: auto;
   margin-top: 15px;
-  margin-left: 25px;
   list-style: none;
   line-height: 30px;
 }
 .container-profil h5 {
-  margin-left: 30px;
+  width: 90%;
+  margin: auto;
   font-size: 18px;
   color: #515151;
 }
 .container-profil h1 {
-  margin: 15px;
+  width: 90%;
+  margin: auto;
+  margin: 15px 0;
   font-size: 28px;
   color: #00a2ea;
 }
@@ -611,7 +687,6 @@ section .container-profil {
   .container-header {
     width: 90%;
     padding-top: 100px;
-    height: 800px;
     display: block !important;
   }
   .container-header .kanan {
@@ -632,6 +707,9 @@ section .container-profil {
   .container-header .kiri form {
     grid-template-columns: 7.5fr 2.5fr;
     margin-top: 25px;
+  }
+  .partner {
+    margin-top: 110%;
   }
   .partner ul li img {
     width: 70px;
@@ -723,20 +801,18 @@ section .container-profil {
     font-size: 16px;
   }
   .container-profil .flex h2 {
+    margin-left: 35px;
     font-size: 18px !important;
     margin-top: 30%;
   }
   .container-profil ul {
     margin-top: 15px;
-    margin-left: 25px;
     line-height: 30px;
   }
   .container-profil h5 {
-    margin-left: 30px;
     font-size: 16px;
   }
   .container-profil h1 {
-    margin: 15px;
     font-size: 22px;
   }
   .halaman-galeri .galeri {
@@ -744,7 +820,7 @@ section .container-profil {
   }
   .guru-header {
     width: 100%;
-    height: 3000px;
+    height: 3200px !important;
   }
   .container-lokasi {
     height: 700px !important;
@@ -757,6 +833,19 @@ section .container-profil {
   }
   .container-lokasi .pembungkus .img-lokasi img {
     width: 90%;
+  }
+  .container-gurukami {
+    height: 2000px;
+  }
+  .container-gurukami .pembungkus {
+    display: block;
+  }
+  .container-gurukami {
+    padding-bottom: 150px !important;
+  }
+  .container-gurukami a {
+    padding: 10px 15px;
+    font-size: 1em;
   }
 }
 @media (max-width: 992px) {
@@ -783,6 +872,7 @@ section .container-profil {
     font-size: 16px;
   }
   .container-profil .flex h2 {
+    margin-left: 35px;
     font-size: 32px;
     margin-top: 30%;
   }
