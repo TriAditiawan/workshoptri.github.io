@@ -448,6 +448,10 @@ section .container-lokasi::before {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
 }
+.container-lokasi .pembungkus .ul {
+  display: grid;
+  grid-template-columns: 0.1fr 0.9fr;
+}
 .container-lokasi .location {
   list-style: none;
 }
@@ -458,8 +462,11 @@ section .container-lokasi::before {
   font-weight: bold;
   height: 50px;
 }
-
-.container-lokasi .location li img {
+.container-lokasi .img {
+  list-style: none;
+}
+.container-lokasi .img li img {
+  margin-bottom: 25px;
   width: 30px;
   box-shadow: 0.5px 0.5px 5px white;
   margin-right: 10px;
@@ -891,12 +898,13 @@ section .container-profil {
   }
   .container-lokasi .location li {
     font-size: 14px;
+    margin-top: 10px;
   }
 
   .container-lokasi .location li img {
     width: 25px;
   }
-   .pembungkus .kiri img {
+  .pembungkus .kiri img {
     height: 430px;
   }
 }
