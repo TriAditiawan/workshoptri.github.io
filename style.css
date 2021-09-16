@@ -896,4 +896,7 @@ section .container-profil {
   .container-lokasi .location li img {
     width: 25px;
   }
+   .pembungkus .kiri img {
+    height: 430px;
+  }
 }
