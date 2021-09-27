@@ -870,6 +870,9 @@ section .container-profil {
     overflow-x: scroll !important;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
+  .container-nav .list-nav::-webkit-scrollbar {
+    display: none;
+  }
   .container-nav .list-nav li {
     margin: 0 20px;
     line-height: 0 !important;
