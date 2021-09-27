@@ -865,6 +865,7 @@ section .container-profil {
     height: 70px;
   }
   .container-nav .list-nav {
+   padding-top: 5px;
     height: 30px;
     overflow-x: scroll !important;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
