@@ -186,19 +186,9 @@ body::-webkit-scrollbar-thumb {
   font-size: 40px;
   margin: 5px 0;
   width: 90%;
-  font-weight: 900 !important;
-  background: linear-gradient(135deg, #f1841e 0%, #00a2ea 25%, #f1841e 75%, #00a2ea 100%);
-  background-size: 400%;
- animation: animate 10s linear infinite;
- -webkit-text-fill-color: transparent;
- -webkit-background-clip: text;
+  font-weight: 800 !important;
 
 }
-   @keyframes animate {
-        100% {
-          background-position: 400%;
-        }
-      }
 .container-header .kiri p {
   font-size: 17px;
   color: #31353b;
