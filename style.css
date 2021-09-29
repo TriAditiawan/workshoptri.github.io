@@ -140,57 +140,6 @@ body::-webkit-scrollbar-thumb {
   background-color: #000;
   z-index: 10;
 }
-.sticky .container-nav .list-nav li:nth-child(1):hover a::after {
-  content: "";
-  width: 52%;
-  margin-top: -15px;
-  border-radius: 2px;
-  height: 3px;
-  display: block;
-  background-color: #000;
-  z-index: 10;
-}
-.sticky .container-nav .list-nav li:nth-child(2):hover a::after {
-  content: "";
-  width: 35%;
-  margin-top: -15px;
-  border-radius: 2px;
-  height: 3px;
-  display: block;
-  background-color: #000;
-  z-index: 10;
-}
-.sticky .container-nav .list-nav li:nth-child(3):hover a::after {
-  content: "";
-  width: 40%;
-  margin-top: -15px;
-  border-radius: 2px;
-  height: 3px;
-  display: block;
-  background-color: #000;
-  z-index: 10;
-}
-.sticky .container-nav .list-nav li:nth-child(4):hover a::after {
-  content: "";
-  width: 35%;
-  margin-top: -15px;
-  border-radius: 2px;
-  height: 3px;
-  display: block;
-  background-color: #000;
-  z-index: 10;
-}
-.sticky .container-nav .list-nav li:nth-child(5):hover a::after {
-  content: "";
-  width: 100%;
-  margin-top: -15px;
-  border-radius: 2px;
-  height: 3px;
-  display: block;
-  background-color: #000;
-  z-index: 10;
-}
-
 .sticky {
   z-index: 99;
   background-color: #00a2ea;
