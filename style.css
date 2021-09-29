@@ -70,12 +70,14 @@ body::-webkit-scrollbar-thumb {
   margin: 10px 0;
 }
 .container-nav .list-nav {
+  align-items: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   list-style: none;
 }
 .container-nav .list-nav li {
-  line-height: 70px;
+  height: 40px;
+  line-height: 40px;
   font-size: 18px;
 }
 .container-nav .list-nav li a {
@@ -90,56 +92,72 @@ body::-webkit-scrollbar-thumb {
 .sticky .container-nav .list-nav li .active {
   color: #000 !important;
 }
-.container-nav .list-nav li:nth-child(1):hover a::after {
-  content: "";
-  width: 52%;
-  margin-top: -15px;
+.container-nav .list-nav li:nth-child(1) {
+  background-image: linear-gradient(black, black);
+  background-repeat: no-repeat;
+  background-size: 0% 5px;
+  transition: all 0.5s;
+  width: 50%;
   border-radius: 2px;
-  height: 3px;
-  display: block;
-  background-color: #000;
-  z-index: 10;
+  background-position: left bottom;
+  cursor: pointer;
 }
-.container-nav .list-nav li:nth-child(2):hover a::after {
-  content: "";
+.container-nav .list-nav li:nth-child(1):hover {
+  background-size: 100% 5px;
+}
+.container-nav .list-nav li:nth-child(2) {
+  background-image: linear-gradient(black, black);
+  background-repeat: no-repeat;
+  background-size: 0% 5px;
+  transition: all 0.5s;
   width: 35%;
-  margin-top: -15px;
   border-radius: 2px;
-  height: 3px;
-  display: block;
-  background-color: #000;
-  z-index: 10;
+  background-position: left bottom;
+  cursor: pointer;
 }
-.container-nav .list-nav li:nth-child(3):hover a::after {
-  content: "";
+.container-nav .list-nav li:nth-child(2):hover {
+  background-size: 100% 5px;
+}
+.container-nav .list-nav li:nth-child(3) {
+  background-image: linear-gradient(black, black);
+  background-repeat: no-repeat;
+  background-size: 0% 5px;
+  transition: all 0.5s;
   width: 40%;
-  margin-top: -15px;
   border-radius: 2px;
-  height: 3px;
-  display: block;
-  background-color: #000;
-  z-index: 10;
+  background-position: left bottom;
+  cursor: pointer;
 }
-.container-nav .list-nav li:nth-child(4):hover a::after {
-  content: "";
-  width: 35%;
-  margin-top: -15px;
+.container-nav .list-nav li:nth-child(3):hover {
+  background-size: 100% 5px;
+}
+.container-nav .list-nav li:nth-child(4) {
+  background-image: linear-gradient(black, black);
+  background-repeat: no-repeat;
+  background-size: 0% 5px;
+  transition: all 0.5s;
+  width: 30%;
   border-radius: 2px;
-  height: 3px;
-  display: block;
-  background-color: #000;
-  z-index: 10;
+  background-position: left bottom;
+  cursor: pointer;
 }
-.container-nav .list-nav li:nth-child(5):hover a::after {
-  content: "";
-  width: 100%;
-  margin-top: -15px;
+.container-nav .list-nav li:nth-child(4):hover {
+  background-size: 100% 5px;
+}
+.container-nav .list-nav li:nth-child(5) {
+  background-image: linear-gradient(black, black);
+  background-repeat: no-repeat;
+  background-size: 0% 5px;
+  transition: all 0.5s;
+  width: 90%;
   border-radius: 2px;
-  height: 3px;
-  display: block;
-  background-color: #000;
-  z-index: 10;
+  background-position: left bottom;
+  cursor: pointer;
 }
+.container-nav .list-nav li:nth-child(5):hover {
+  background-size: 100% 5px;
+}
+
 .sticky {
   z-index: 99;
   background-color: #00a2ea;
@@ -187,7 +205,6 @@ body::-webkit-scrollbar-thumb {
   margin: 5px 0;
   width: 90%;
   font-weight: 800 !important;
-
 }
 .container-header .kiri p {
   font-size: 17px;
@@ -579,10 +596,24 @@ footer {
   color: #00a2ea;
 }
 .footer ul .judul {
+  height: 40px;
   color: white;
   font-size: 18px;
   margin-bottom: 15px;
+  background-image: linear-gradient(white, white);
+  background-repeat: no-repeat;
+  background-size: 0% 5px;
+  transition: all 0.5s;
+  width: 100%;
+  border-radius: 2px;
+  background-position: left bottom;
+  cursor: pointer;
 }
+.footer ul .judul:hover {
+  width: 50%;
+  background-size: 100% 5px;
+}
+
 .footer ul .judul:hover {
   color: white;
 }
@@ -1054,6 +1085,9 @@ section .container-profil {
   }
   .header-perpustakaan {
     height: 1880px !important;
+  }
+  .container-nav .list-nav li:nth-child(2):hover {
+    background-size: 0% 0px;
   }
 }
 @media (max-width: 992px) {
